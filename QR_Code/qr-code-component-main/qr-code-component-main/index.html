@@ -8,21 +8,95 @@
   
   <title>Frontend Mentor | QR code component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
   <style>
-    .attribution { font-size: 0.6875rem; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+/* font-family: import from google */
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+    
+/* border box and reset default margin and padding */
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+   /* body styling - entire page is a flexbox */ 
+    body {
+  
+      font-family: 'Outfit', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: hsl(212, 45%, 89%);
+      min-height: 100vh;
+    
+    }
+    /* container styling */
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 320px;
+      padding: 16px 16px 40px 16px;
+      background-color: #ffffff;
+      border-radius: 20px;
+      box-shadow: 0px 25px 25px 0px rgba(0, 0, 0, 4.77%); 
+      margin:auto; /* To push the footer to the bottom */
+}
+
+      
+    
+    /* qr-code styling */
+    .qr-code {
+      width: 288px;
+      height: 288px;
+      border-radius: 10px;
+      margin-bottom: 24px;
+    }
+/* h1 and p styling */
+    h1 {
+      font-size: 22px;
+      font-weight: 700;
+      color: hsl(218, 44%, 22%);
+      text-align: center;
+      font-family: 'Outfit', sans-serif;
+      line-height: 120%;
+      letter-spacing: 0px;
+      padding:0px;
+      margin-bottom: 16px;
+    }
+
+    p {
+      font-size: 15px;
+      font-weight: 400;
+      color: hsl(220, 15%, 55%);
+      text-align: center;
+      font-family: 'Outfit', sans-serif;
+      line-height: 140%;
+      letter-spacing: 0.2px;
+      padding:0px 16px;
+      margin: 0px;
+    }
+
+    /* footer styling */
+    footer {
+  
+      font-size: 12px;
+      text-align: center;
+    }
+    
   </style>
 </head>
 <body>
-
-  Improve your front-end skills by building projects
-
-  Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
-  
+<div class="container">
+  <img class="qr-code" src="./images/image-qr-code.png" alt="qr-code">
+  <h1>Improve your front-end skills by building projects</h1>
+  <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+</div>
   <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://github.com/robotraja96">RRR</a>.
   </footer>
 </body>
 </html>
