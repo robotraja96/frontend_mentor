@@ -36,8 +36,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://github.com/robotraja96/frontend_mentor/tree/main/Blog_Preview_Card/blog-preview-card-main)
+- Live Site URL: [Add live site URL here](https://frontendmentor-blog-preview-card-ma-seven.vercel.app)
 
 ## My process
 Utilizing stuff I learned in the previous QR Code project, I started from outside to in and top to bottom. This time I used a container with a card component justified at the center instead of making `<body>` a flexbox. Most of this was quite easy and the flow came quite naturally. There was no real block point actually.
