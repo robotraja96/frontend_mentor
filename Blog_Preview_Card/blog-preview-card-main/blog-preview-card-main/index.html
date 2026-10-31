@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Blog preview card</title>
+
+  <style>
+      @font-face {
+    font-family: 'Figtree';
+    src: url('./assets/fonts/Figtree-VariableFont_wght.ttf') format('truetype');
+    font-weight: 500 800;
+    font-style: normal;
+    font-display: swap;
+  }
+
+
+
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body{
+      background-color: #F4D04E;
+
+    }
+
+    .container{
+      width: 100%;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+    }
+
+    #illustration-article{
+      height: 200px;
+      border-radius: 10px;
+    }
+
+    .card {
+      width:384px;
+      border-radius: 20px;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      padding: 24px;
+      gap:24px;
+      box-shadow:8px 8px 0px 0px rgba(0, 0, 0, 100%);
+      border: 1px solid hsl(0, 0%, 7%);
+    }
+
+    .learning {
+      font-size: 14px;
+      font-weight: 800;
+      color: hsl(0,0, 7%);
+      text-align: left;
+      font-family: 'Figtree', sans-serif;
+      line-height: 150%;
+      letter-spacing: 0px;
+      padding: 4px 12px;
+      background-color: #F4D04E;
+      border-radius: 4px;
+
+
+    }
+
+    .text {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      padding: 0px;
+      gap: 12px;
+    }
+
+    .published {
+      font-size: 14px;
+      font-weight: 500;
+      color: hsl(0, 0%, 7%);
+      text-align: left;
+      font-family: 'Figtree', sans-serif;
+      line-height: 150%;
+      letter-spacing: 0px;
+      padding: 0px;
+      margin: 0px;
+    }
+h1{
+  font-size: 24px;
+  font-weight: 800;
+  color: hsl(0, 0%, 7%);
+  text-align: left;
+  font-family: 'Figtree', sans-serif;
+  line-height: 150%;
+  letter-spacing: 0px;
+  padding: 0px;
+  margin: 0px;
+}
+
+h1:hover{
+  color: #F4D04E;
+}
+.description{
+  font-size: 16px;
+  font-weight: 500;
+  color: hsl(0, 0%, 42%);
+  text-align: left;
+  font-family: 'Figtree', sans-serif;
+  line-height: 150%;
+  letter-spacing: 0px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.attribution{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0px;
+  margin: 0px;
+}
+
+#author-avatar {
+  width:32px;
+  height: 32px;
+
+}
+
+#author-name{
+  font-size: 14px;
+  font-weight: 800;
+  color: hsl(0, 0%, 7%);
+  text-align: left;
+  font-family: 'Figtree', sans-serif;
+  line-height: 150%;
+  letter-spacing: 0px;
+  padding: 0px;
+  margin: 5.5px 0px 5.5px 12px;
+}
+
+    footer {
+  
+      font-size: 12px;
+      text-align: center;
+      position: absolute;
+      bottom: 0;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="card">
+    <img id="illustration-article" src="./assets/images/illustration-article.svg" alt="Design illustration">
+    <div class="text">  
+    
+        <div class="learning">Learning</div>
+
+        <p class="published">Published 21 Dec 2023</p>
+
+        <h1>HTML & CSS foundations</h1>
+
+        <p class="description">These languages are the backbone of every website, defining structure, content, and presentation.</p>
+    </div>  
+    <div class="attribution">
+      <img id="author-avatar" src="./assets/images/image-avatar.webp" alt="Author image">
+        <p id="author-name">Greg Hooper</p>
+    </div>
+  </div>
+ 
+
+   <footer >
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/robotraja96">Robot96</a>.
+  </footer>
+</div>
+
+  
+
+</body>
+</html>
