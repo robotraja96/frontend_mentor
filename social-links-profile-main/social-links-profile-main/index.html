@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- Makes the page scale properly on the user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Social links profile</title>
+
+  <style>
+    /* ---------- Fonts (Inter, loaded from local files) ---------- */
+
+    /* Regular */
+    @font-face {
+      font-family: 'Inter';
+      src: url('./assets/fonts/static/Inter-Regular.ttf') format('truetype');
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    /* Semi-bold */
+    @font-face {
+      font-family: 'Inter';
+      src: url('./assets/fonts/static/Inter-SemiBold.ttf') format('truetype');
+      font-weight: 600;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    /* Bold */
+    @font-face {
+      font-family: 'Inter';
+      src: url('./assets/fonts/static/Inter-Bold.ttf') format('truetype');
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    /* ---------- Reset ---------- */
+
+    /* Remove default browser spacing; padding and border count inside width */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* ---------- Page layout ---------- */
+
+    /* Full-height dark background; centers the card on the screen */
+    .container {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: hsl(0, 0%, 8%);
+    }
+
+    /* ---------- Card ---------- */
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: hsl(0, 0%, 12%);
+      border-radius: 10px;
+      padding: 40px 36px;
+      gap: 16px;
+      width: 330px;
+    }
+
+    /* Round avatar: the wrapper clips the image into a circle */
+    .card-image {
+      border-radius: 50%;
+      overflow: hidden;
+    }
+
+    .card-image img {
+      width: 64px;
+      height: 64px;
+      object-fit: cover;
+    }
+
+    /* ---------- Text styles ---------- */
+
+    /* Shared font and colour for the text classes below */
+    .bold,
+    .semibold,
+    .para {
+      font-family: 'Inter', sans-serif;
+      color: hsl(0, 0%, 100%);
+    }
+
+    .bold {
+      font-weight: 700;
+    }
+
+    .semibold {
+      font-weight: 600;
+    }
+
+    .para {
+      font-weight: 400;
+    }
+
+    /* Name and location, stacked and centered */
+    .name-place {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 16px;
+    }
+
+    .name {
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+
+    /* Location uses the lime accent colour */
+    .place {
+      color: hsl(75, 94%, 57%);
+      font-size: 10px;
+    }
+
+    .description {
+      text-align: center;
+      font-size: 12px;
+      padding: 0px 16px;
+    }
+
+    .description p {
+      color: hsl(0, 0%, 80%);
+    }
+
+    /* ---------- Social links ---------- */
+
+    /* Column of buttons; each one stretches to the full card width */
+    .social-links {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      justify-content: center;
+      gap: 16px;
+      width: 100%;
+    }
+
+    /* The whole grey bar is the link, so the entire bar is clickable */
+    .link {
+      background-color: hsl(0, 0%, 20%);
+      font-size: 14px;
+      text-align: center;
+      padding: 8px 16px;
+      border-radius: 4px;
+      color: hsl(0, 0%, 90%);
+      text-decoration: none;
+    }
+
+    /* Hover (mouse) and focus (keyboard Tab) share the same lime look */
+    .link:hover,
+    .link:focus {
+      background-color: hsl(75, 94%, 57%);
+      color: hsl(0, 0%, 12%);
+    }
+
+    /* ---------- Footer ---------- */
+
+    /* Pinned to the bottom of the page */
+    footer {
+      font-size: 12px;
+      text-align: center;
+      position: absolute;
+      bottom: 0;
+      color: hsl(0, 0%, 80%);
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- Profile card -->
+    <div class="card">
+
+      <!-- Avatar -->
+      <div class="card-image">
+        <img src="./assets/images/avatar-jessica.jpeg" alt="Jessica image">
+      </div>
+
+      <!-- Name and location -->
+      <div class="name-place">
+        <h1 class="name bold">Jessica Randall</h1>
+        <p class="place semibold">London, United Kingdom</p>
+      </div>
+
+      <!-- Short bio -->
+      <div class="description">
+        <p class="para">"Front-end developer and avid reader."</p>
+      </div>
+
+      <!-- Social links: each <a> is one full-width button -->
+      <div class="social-links">
+        <a href="https://github.com/robotraja96" class="link semibold">GitHub</a>
+        <a href="https://www.frontendmentor.io/profile/robotraja96" class="link semibold">Frontend Mentor</a>
+        <a href="https://www.linkedin.com/in/" class="link semibold">LinkedIn</a>
+        <a href="https://x.com/" class="link semibold">Twitter</a>
+        <a href="https://www.instagram.com/" class="link semibold">Instagram</a>
+      </div>
+    </div>
+
+    <!-- Attribution -->
+    <footer>
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/robotraja96">Robot96</a>.
+    </footer>
+
+  </div>
+</body>
+
+</html>
