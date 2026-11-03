@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- Makes the page scale properly on the user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <!-- Start loading the fonts early -->
+  <link
+    rel="preload"
+    href="./assets/fonts/outfit/Outfit-VariableFont_wght.ttf"
+    as="font"
+    type="font/truetype"
+    crossorigin />
+
+  <link
+    rel="preload"
+    href="./assets/fonts/young-serif/YoungSerif-Regular.ttf"
+    as="font"
+    type="font/truetype"
+    crossorigin />
+
+  <link rel="stylesheet" href="./styles.css">
+  <title>Frontend Mentor | Recipe page</title>
+</head>
+
+<body>
+  <div class="container">
+    <main class="recipe">
+
+      <img
+        class="recipe__image"
+        src="./assets/images/image-omelette.jpeg"
+        alt="Image of a simple omelette on a plate with garnishes"
+        width="1312"
+        height="600">
+
+      <!-- Title and description -->
+      <section class="recipe__details">
+        <h1 class="recipe__title">Simple Omelette Recipe</h1>
+        <p class="recipe__description">An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked to perfection, optionally filled with your choice of cheese, vegetables, or meats.</p>
+      </section>
+
+      <!-- Preparation time -->
+      <div class="recipe__prep-time">
+        <h2 class="recipe__prep-time-title">Preparation time</h2>
+        <ul class="recipe__prep-time-list">
+          <li><strong>Total</strong>: Approximately 10 minutes</li>
+          <li><strong>Preparation</strong>: 5 minutes</li>
+          <li><strong>Cooking</strong>: 5 minutes</li>
+        </ul>
+      </div>
+
+      <!-- Ingredients -->
+      <div class="recipe__ingredients">
+        <h3 class="recipe__ingredients-title">Ingredients</h3>
+        <ul class="recipe__ingredients-list">
+          <li>2-3 large eggs</li>
+          <li>Salt, to taste</li>
+          <li>Pepper, to taste</li>
+          <li>1 tablespoon of butter or oil</li>
+          <li>Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
+        </ul>
+      </div>
+
+      <hr>
+
+      <!-- Instructions -->
+      <div class="recipe__instructions">
+        <h3 class="recipe__instructions-title">Instructions</h3>
+        <ol class="recipe__instructions-list">
+          <li><strong>Beat the eggs:</strong> In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. You can add a tablespoon of water or milk for a fluffier texture.</li>
+          <li><strong>Heat the pan:</strong> Place a non-stick frying pan over medium heat and add butter or oil.</li>
+          <li><strong>Cook the omelette:</strong> Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure the eggs evenly coat the surface.</li>
+          <li><strong>Add fillings (optional):</strong> When the eggs begin to set at the edges but are still slightly runny in the middle, sprinkle your chosen fillings over one half of the omelette.</li>
+          <li><strong>Fold and serve:</strong> As the omelette continues to cook, carefully lift one edge and fold it over the fillings. Let it cook for another minute, then slide it onto a plate.</li>
+          <li><strong>Enjoy:</strong> Serve hot, with additional salt and pepper if needed.</li>
+        </ol>
+      </div>
+
+      <hr>
+
+      <!-- Nutrition: each row's th is the label, td is the value -->
+      <div class="recipe__nutrition">
+        <h3 class="recipe__nutrition-title">Nutrition</h3>
+        <p class="recipe__nutrition-description">The table below shows nutritional values per serving without the additional fillings.</p>
+        <table class="recipe__nutrition-table">
+          <tr>
+            <th scope="row" class="recipe__nutrition-table-label">Calories</th>
+            <td class="recipe__nutrition-table-value"><strong>277kcal</strong></td>
+          </tr>
+          <tr>
+            <th scope="row" class="recipe__nutrition-table-label">Carbs</th>
+            <td class="recipe__nutrition-table-value"><strong>0g</strong></td>
+          </tr>
+          <tr>
+            <th scope="row" class="recipe__nutrition-table-label">Protein</th>
+            <td class="recipe__nutrition-table-value"><strong>20g</strong></td>
+          </tr>
+          <tr>
+            <th scope="row" class="recipe__nutrition-table-label">Fat</th>
+            <td class="recipe__nutrition-table-value"><strong>22g</strong></td>
+          </tr>
+        </table>
+      </div>
+
+    </main>
+
+    <!-- Attribution -->
+    <footer>
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/robotraja96">Robot96</a>.
+    </footer>
+  </div>
+</body>
+
+</html>
